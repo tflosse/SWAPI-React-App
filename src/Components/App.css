@@ -1,0 +1,69 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14pt;
+  width: 100vw;
+  height: 100vh;
+}
+.App {
+  background-image: url("https://images.unsplash.com/photo-1578374173703-3b306567209a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2643&q=80");
+}
+
+nav {
+  background-image: url("https://images.unsplash.com/photo-1520034475321-cbe63696469a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+nav img {
+  max-height: 50px;
+  padding: 5px;
+  /* margin: 5px 20px 5px 0; */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav h1 {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav a {
+  color: white;
+  display: inline-block;
+  padding: 20px;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: rgba(145, 109, 33,0.2);
+}
+
+main {
+  width: 900px;
+  margin: auto;
+  height: 100%;
+}
+
+.home-page {
+  background-image: url("https://s30886.pcdn.co/wp-content/uploads/2019/03/star-wars-credits-intro-wall-mural-8-487.jpg");
+}
+
+.my-fleet {
+  background-image: url("https://images.unsplash.com/photo-1578374173713-32f6ae6f3971?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
+}
+/* .quick-view {
+  background-image: url("https://images.unsplash.com/photo-1578374173705-969cbe6f2d6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80");
+  alt-image: url("https://images.unsplash.com/photo-1578374173713-32f6ae6f3971?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
+  other-image: url("https://images.unsplash.com/photo-1587279484796-61a264afc18b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
+  other: url("https://images.unsplash.com/photo-1495055154266-57bbdeada43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
+  other-other: url("https://images.unsplash.com/photo-1578374173705-08648798df55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80");
+  credits: url("https://s30886.pcdn.co/wp-content/uploads/2019/03/star-wars-credits-intro-wall-mural-8-487.jpg");
+} */
