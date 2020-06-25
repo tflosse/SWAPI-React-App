@@ -9,33 +9,34 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-<nav>
-      <Link to="/">
-        <h1>Build your Fleet</h1>
-      </Link>
-      <Link to="/people">
-        People
-      </Link>
-      <Link to="/starships">
-        Starships
-      </Link>
-      <img src="https://clipart.info/images/ccovers/1513370389Star%20Wars%20Logo%20transparent%20PNG.png" alt="logo"/>
-      <Link to="/myfleet">
-        My Fleet
-      </Link>
-    </nav>
-    <main>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/people" component={People} />
-        <Route path="/starships" component={Starships} />
-        <Route path="/myfleet" component={MyFleet} />
-        <Route path="*" 
-          render={()=> 
-          <Redirect to="/home"/> } 
-          />
-      </Switch>
-    </main>
+      <nav>
+        <Link to="/">
+          <h1>Build your 
+          <img src="https://clipart.info/images/ccovers/1513370389Star%20Wars%20Logo%20transparent%20PNG.png" alt="logo"/>
+          Fleet</h1>
+        </Link>
+        <Link to="/people">
+          People
+        </Link>
+        <Link to="/starships">
+          Starships
+        </Link>
+        <Link to="/myfleet">
+          MY FLEET
+        </Link>
+      </nav>
+      <main>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/people" component={People} />
+          <Route path="/starships" component={Starships} />
+          <Route path="/myfleet" component={MyFleet} />
+          <Route path="*" 
+            render={()=> 
+            <Redirect to="/home"/> } 
+            />
+        </Switch>
+      </main>
     </div>
   );
 }

@@ -5,65 +5,190 @@ body {
   font-size: 14pt;
   width: 100vw;
   height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
 }
+
 .App {
-  background-image: url("https://images.unsplash.com/photo-1578374173703-3b306567209a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2643&q=80");
+  background-color: black;
+  position: relative;
 }
 
 nav {
   background-image: url("https://images.unsplash.com/photo-1520034475321-cbe63696469a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
+  height: 10vh;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  margin-bottom: 20px;
 }
 
 nav img {
   max-height: 50px;
-  padding: 5px;
+  padding: 3px;
   /* margin: 5px 20px 5px 0; */
-  display: inline-block;
-  vertical-align: middle;
-}
-
-nav h1 {
-  margin: 0;
   display: inline-block;
   vertical-align: middle;
 }
 
 nav a {
   color: white;
+  font-family: 'Bowlby One SC', cursive;
   display: inline-block;
-  padding: 20px;
-  font-size: 1.2em;
+  padding: 10px;
+  font-size: 1.5em;
   text-decoration: none;
+  border-radius: 10px;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 nav a:hover {
   background: rgba(145, 109, 33,0.2);
+  color: rgb(254,238,2);
+  transition: all 400ms ease;
 }
 
 main {
-  width: 900px;
+  width: 100%;
+  height: 100%;
   margin: auto;
   height: 100%;
 }
 
+.home-page, .starships, .people, .my-fleet {
+height: 90vh;
+width: 100vw;
+background-size: cover;
+background-repeat: no-repeat;
+padding-top: 20px;
+}
+
 .home-page {
+  color: rgb(254,238,2);
+  text-align: center;
   background-image: url("https://s30886.pcdn.co/wp-content/uploads/2019/03/star-wars-credits-intro-wall-mural-8-487.jpg");
 }
 
+.home-page > ul {
+  list-style: none;
+  padding: 10px 0 20px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.people {
+  background-image: url("https://images.unsplash.com/photo-1587279484796-61a264afc18b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.starships {
+  background-image: url("https://images.unsplash.com/photo-1578374173705-969cbe6f2d6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80");
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.char-list, .ship-list {
+  grid-column: 1/2;
+  display: flex;
+  height: calc(80vh-40px);
+  flex-direction: column;
+  overflow-y: scroll;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.char--list, .ship--list {
+  list-style: none;
+}
+.char--list li, .ship--list li {
+  margin-bottom: 5px;
+} 
+.char--list button, 
+.ship--list button {
+  position: relative;
+  width: 40vw;
+  font-family: 'Bowlby One SC', cursive;
+  text-align: left;
+  margin: 0 auto;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.char--list button {
+  background-color: rgb(222, 222, 222);
+  border: solid 1px black;
+}
+.ship--list button {
+  background-color: rgb(252, 252, 252);
+  border: solid 1px black;
+}
+.char--list button:focus, 
+.ship--list button:focus {
+  outline: 2px solid rgb(254,238,2);
+  outline-offset: -5px;
+  border: none;
+}
+.char--list p, 
+.ship--list p {
+  margin-left: 20px;
+  float: left;
+}
+.char--list img,
+.ship--list img {
+  height: 20px;
+  display: inline-block;
+  margin: 15px 15px 0 0;
+  float: right;
+}
+
+.char-card, 
+.ship-card {
+  position: relative;
+  margin: 20px auto;
+  margin-top: 50px;
+  grid-column: 2/3;
+  
+  height: 350px;
+  background-color: rgb(222, 222, 222);
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+}
+.ship-card {
+  width: 40vw;
+}
+.char-card button, 
+.ship-card button {
+  position: absolute;
+  bottom: 15px;
+  right: 100px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: black;
+  color: whitesmoke;
+  padding: 5px;
+  width: 50%;
+  margin: auto;
+  font-family: 'Bowlby One SC', cursive;
+  cursor: pointer;
+}
+.ship-card button {
+  right: 120px;
+}
+.char-card button:hover,
+.ship-card button:hover {
+  background: rgba(95, 71, 18, 0.7);
+  color: rgb(254,238,2);
+  transition: all 400ms ease;
+}
 .my-fleet {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: whitesmoke;
   background-image: url("https://images.unsplash.com/photo-1578374173713-32f6ae6f3971?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
 }
-/* .quick-view {
-  background-image: url("https://images.unsplash.com/photo-1578374173705-969cbe6f2d6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80");
-  alt-image: url("https://images.unsplash.com/photo-1578374173713-32f6ae6f3971?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
-  other-image: url("https://images.unsplash.com/photo-1587279484796-61a264afc18b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
-  other: url("https://images.unsplash.com/photo-1495055154266-57bbdeada43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
-  other-other: url("https://images.unsplash.com/photo-1578374173705-08648798df55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80");
-  credits: url("https://s30886.pcdn.co/wp-content/uploads/2019/03/star-wars-credits-intro-wall-mural-8-487.jpg");
-} */
