@@ -6,8 +6,10 @@ function Home() {
       <div className="home-page">
         <h1>This is the homepage!</h1>
         <p>There's not much here, although I'd love to add a <br />
+        registration form for each user to add them as the first <br />
+        member of their fleet before they can recruit more and pick ship. <br />
         search bar to allow you to find your favorite characters <br />
-        and starships aventually. Here's some info about this App:</p>
+        and starships eventually. Here's some info about this App:</p>
         <ul>
           <li>It was built using React and React-Router</li>
           <li>The lists and details data are provided by SWAPI</li>
