@@ -150,7 +150,7 @@ padding-top: 20px;
   margin: 20px auto;
   margin-top: 50px;
   grid-column: 2/3;
-  
+  width: 35vw;
   height: 350px;
   background-color: rgb(222, 222, 222);
   border: 1px solid black;
